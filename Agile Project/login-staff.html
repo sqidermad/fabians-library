@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/template.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Staff Login</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top my-navbar content-font">
+        <a class="navbar-brand" href="#">Fabian's Library</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-target">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapse-target">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="onsite.html">Borrow</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="return.html">Return</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="request.html">Confirmation</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="jumbotron mb-0 rounded-0 header">
+        <div class="container ">
+            <h1 class="title-font" style="color: #9e332b; font-size: 65.94pt;
+                            text-shadow: 3px 3px 30px white;">Preserving
+                The Past,</h1>
+            <h1 class="display-2 header-font text-center ml-5 text-white" style="font-size: 65.94pt;">opening the
+                future</h1>
+        </div>
+    </div>
+
+    <div class="container-fluid py-5 bg-primary" style="height: 435; background-image: url('image/login/login_02.jpg')">
+        <div class="col-md-8 mx-auto">
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <div class="card">
+                        <div class="card-header header-font">
+                            <h3 class="mb-0 header-font">Staff Login</h3>
+                        </div>
+                        <div class="card-body content-font">
+                            <form>
+                                <div class="form-group">
+                                    <label for="name">Staff Id</label>
+                                    <input type="text" class="form-control form-control-lg" id="name" value="Tesa123">
+                                </div>
+                                <div class="form-group">
+                                    <label for="pass">Password</label>
+                                    <input type="password" class="form-control form-control-lg" id="pass" value="123111111">
+                                </div>
+                                <button type="button" class="btn btn-lg float-right my-button" id="btnLogin" onclick="location.href = 'onsite.html'">Login</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="px-4 pt-4 text-white footer">
+        <div class="row">
+            <div class="col-8 col-md">
+                <h5 class="mb-3 header-font font-weight-bold">WHERE WE AT ?</h5>
+                <div class="content-font">
+                    <p class="mb-0">Jln Alam Pesona No. 50</p>
+                    <p class="mb-0">Sentul 16810</p>
+                    <p>+081-234567890</p>
+                </div>
+            </div>
+            <div class="col-8 col-md">
+                <h5 class="mb-3 header-font font-weight-bold">WORK HOURS</h5>
+                <div class="row content-font">
+                    <div class="col">
+                        <p class="mb-0">Wednesday - Friday</p>
+                        <p style="font-size: 18px; font-weight: bold">12:00pm - 09:00pm</p>
+                    </div>
+                    <div class="col">
+                        <p class="mb-0">Saturday - Sunday</p>
+                        <p style="font-size: 18px; font-weight: bold">12:00pm - 11:00pm</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-8 col-md pl-5">
+                <h5 class="mb-3 header-font font-weight-bold">SOCIAL NETWORKS</h5>
+                <div class="content-font">
+                    <a href="#"><i class="fa fa-facebook fa-social"></i></a>
+                    <a href="#"><i class="fa fa-twitter fa-social"></i></a>
+                    <a href="#"><i class="fa fa-instagram fa-social"></i></a>
+                    <p class="mt-4 text-muted">thislibrary.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Javascript -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

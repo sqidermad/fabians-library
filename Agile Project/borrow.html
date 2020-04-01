@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/template.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Borrow</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top my-navbar content-font">
+        <a class="navbar-brand" href="#">Fabian's Library</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-target">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapse-target">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="catalogue.html">Catalogue</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="borrow.html">Borrow</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+            </ul>
+            <div class="btn-group">
+                <button type="button" class="btn my-button btn-sm"> <i class="fa fa-user-circle-o"></i> Fabian Vieri</button>
+                <button type="button" class="btn my-button dropdown-toggle dropdown-toggle-split btn-sm" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="notification.html">Notification <span class="badge badge-danger">4</span></a>
+                    <a class="dropdown-item" href="edit.html">Edit Profile</a>
+                    <a class="dropdown-item" href="login.html">Log Out</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="jumbotron mb-0 rounded-0" style="height: 350px; background-image: url('image/catalogue/catalogue_01.jpg')">
+        <div class="container ">
+            <h1 class="title-font" style="color: #9e332b; font-size: 65.94pt;
+                    text-shadow: 3px 3px 30px white;">Preserving
+                The Past,</h1>
+            <h1 class="display-2 header-font text-center ml-5 text-white" style="font-size: 65.94pt;">opening the
+                future</h1>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-primary" style="height: 765px; background-image: url('image/borrow/borrow_02.jpg')">
+        <h2 class="pt-3 text-dark header-font">Borrow Book</h2>
+        <br>
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active text-dark" data-toggle="tab" href="#home">Search Books</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" data-toggle="tab" href="#menu1">Your Holds</a>
+            </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div id="home" class="container-fluid tab-pane active"><br>
+                <h3 class="text-dark header-font">Search Books</h3>
+                <form>
+                    <div class="form-row">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-danger my-2 my-sm-0" type="submit" onclick="func()">Search</button>
+                        </div>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option">
+                        <label class="form-check-label" for="inlineCheckbox1">All</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="inlineCheckbox2" name="option">
+                        <label class="form-check-label" for="inlineCheckbox2">Author</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="inlineCheckbox3" name="option">
+                        <label class="form-check-label" for="inlineCheckbox3">Title</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="inlineCheckbox3" name="option">
+                        <label class="form-check-label" for="inlineCheckbox3">Genre</label>
+                    </div>
+                </form>
+                <div class="container mx-0">
+                    <div class="row p-3">
+                        <div class="col-md-1 p-0">
+                            <img src="image/books/bener.png" alt="..." class="img-thumbnail" width="100" height="100">
+                        </div>
+                        <div class="col-md-11 content-font">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="mb-0">Title : Teleportation Accident <br> Available Copy : 0 <br> Author
+                                        : Ned Beauman
+                                        <br> <a href="catalogue.html" class="text-primary">Read More</a></p>
+                                </div>
+                                <div class="col">
+                                    <button type="button" class="btn btn-danger float-right">Hold</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-0">
+                    <div class="row p-3">
+                        <div class="col-md-1 p-0">
+                            <img src="image/books/lplplp.png" alt="..." class="img-thumbnail" width="100" height="100">
+                        </div>
+                        <div class="col-md-11 content-font">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="mb-0">Title : Bidget Jones's Diary <br> Available Copy : 1 <br> Author :
+                                        Helen Fielding
+                                        <br> <a href="catalogue.html" class="text-primary">Read More</a></p>
+                                </div>
+                                <div class="col">
+                                    <button type="button" class="btn btn-danger float-right">Hold</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-0">
+                    <div class="row p-3">
+                        <div class="col-md-1 p-0">
+                            <img src="image/books/girl.png" alt="..." class="img-thumbnail" width="100" height="100">
+                        </div>
+                        <div class="col-md-11 content-font">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="mb-0">Title : Mother Stories <br> Available Copy : 2 <br> Author :
+                                        Chris Power
+                                        <br> <a href="catalogue.html" class="text-primary">Read More</a></p>
+                                </div>
+                                <div class="col">
+                                    <button type="button" class="btn btn-danger float-right">Hold</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="menu1" class="container-fluid tab-pane fade p-2"><br>
+                <h3 class="text-dark mb-3 header-font">Your Holds</h3>
+                <table class="table table-bordered mb-0 content-font">
+                    <thead>
+                        <tr>
+                            <th scope="col">No</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Publisher</th>
+                            <th scope="col">Author</th>
+                            <th scope="col">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>What Kitty Did ?</td>
+                            <td>Harper Collins</td>
+                            <td>Trisha Bora</td>
+                            <td>Waiting
+                                <button type="button" class="btn btn-danger btn-sm float-right fa fa-remove"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>There There</td>
+                            <td>Knopf</td>
+                            <td>Tommy Orange</td>
+                            <td>Ready - 1d:20h
+                                <button type="button" class="btn btn-danger btn-sm float-right fa fa-remove"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Trouble With Men</td>
+                            <td>New Holland Australia</td>
+                            <td>Jason Michael</td>
+                            <td>Waiting
+                                <button type="button" class="btn btn-danger btn-sm float-right fa fa-remove"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Teleportation Accident</td>
+                            <td>Bloomsburry USA</td>
+                            <td>Ned Beauman</td>
+                            <td>Waiting
+                                <button type="button" class="btn btn-danger btn-sm float-right fa fa-remove"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Bidget Jones's Diary</td>
+                            <td>Picador</td>
+                            <td>Helen Fielding</td>
+                            <td>On Hand</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Mother Stories</td>
+                            <td>Farar, Straur, Giraux</td>
+                            <td>Chris Power</td>
+                            <td>On Hand</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="px-4 pt-4 text-white" style="background-image: url('image/borrow/borrow_03.jpg')">
+        <div class="row">
+            <div class="col-8 col-md">
+                <h5 class="mb-3 header-font font-weight-bold">WHERE WE AT ?</h5>
+                <div class="content-font">
+                    <p class="mb-0">Jln Alam Pesona No. 50</p>
+                    <p class="mb-0">Sentul 16810</p>
+                    <p>+081-234567890</p>
+                </div>
+            </div>
+            <div class="col-8 col-md">
+                <h5 class="mb-3 header-font font-weight-bold">WORK HOURS</h5>
+                <div class="row content-font">
+                    <div class="col">
+                        <p class="mb-0">Wednesday - Friday</p>
+                        <p style="font-size: 18px; font-weight: bold">12:00pm - 09:00pm</p>
+                    </div>
+                    <div class="col">
+                        <p class="mb-0">Saturday - Sunday</p>
+                        <p style="font-size: 18px; font-weight: bold">12:00pm - 11:00pm</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-8 col-md pl-5">
+                <h5 class="mb-3 header-font font-weight-bold">SOCIAL NETWORKS</h5>
+                <div class="content-font">
+                    <a href="#"><i class="fa fa-facebook fa-social"></i></a>
+                    <a href="#"><i class="fa fa-twitter fa-social"></i></a>
+                    <a href="#"><i class="fa fa-instagram fa-social"></i></a>
+                    <p class="mt-4 text-muted">thislibrary.com</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

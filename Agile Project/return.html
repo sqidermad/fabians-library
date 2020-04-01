@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/template.css">
+  <link rel="icon" type="image/png" sizes="16x16" href="image/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Return Book</title>
+</head>
+<style type="text/css">
+  .alert {
+    display: none;
+  }
+
+  .print {
+    display: none;
+  }
+</style>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top my-navbar content-font">
+    <a class="navbar-brand" href="#">Fabian's Library</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-target">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="collapse-target">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="onsite.html">Borrow</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="return.html">Return</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="request.html">Confirmation</a>
+        </li>
+      </ul>
+      <div class="btn-group">
+        <button type="button" class="btn btn-info btn-sm"> <i class="fa fa-user-circle-o"></i>Tessa</button>
+        <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split btn-sm" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <div class="dropdown-menu dropdown-menu-right">
+          <a class="dropdown-item" href="login-staff.html">Log out</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Header -->
+  <div class="jumbotron mb-0 rounded-0 header">
+    <div class="container ">
+      <h1 class="title-font" style="color: #9e332b; font-size: 65.94pt;
+                      text-shadow: 3px 3px 30px white;">Preserving
+        The Past,</h1>
+      <h1 class="display-2 header-font text-center ml-5 text-white" style="font-size: 65.94pt;">opening the
+        future</h1>
+    </div>
+  </div>
+
+  <div class="container-fluid bg-primary p-3" style="height: 915px; background-image: url('image/return/return_02.jpg')">
+    <div class="container mt-5">
+      <form class="example">
+        <input type="text" class="form-control" placeholder="Insert customer ID" name="search">
+        <button type="submit" class="ml-3 my-button"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+    <div class="container">
+      <h2 class="header-font">Book's Borrowed</h2>
+      <table class="table table-bordered content-font">
+        <thead>
+          <tr>
+            <th>Book ID</th>
+            <th>Title</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>BD1234</td>
+            <td>Memories of the Alhambra</td>
+            <td class="custom-checkbox mb-3"><input type="checkbox" class="custom-control-input" checked="checked"><label
+                class="custom-control-label letak" for="customCheck"></label></td>
+          </tr>
+          <tr>
+            <td>DF1234</td>
+            <td>Moe</td>
+            <td class="custom-checkbox mb-3"><input type="checkbox" class="custom-control-input" value="" id="customCheck"><label
+                class="custom-control-label letak" for="customCheck"></label></td>
+          </tr>
+          <tr>
+            <td>AA1234</td>
+            <td>Dooley</td>
+            <td class="custom-checkbox mb-3"><input type="checkbox" class="custom-control-input" value="" id="customCheck1"><label
+                class="custom-control-label letak" for="customCheck1"></label></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="container py-3">
+      <h2 class="header-font">Detail Transaction</h2>
+      <table class="table table-hover content-font">
+        <thead>
+          <tr>
+            <th>Qty</th>
+            <th>Description</th>
+            <th>@</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2</td>
+            <td>BD1234</td>
+            <td>2500</td>
+            <td>5000</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>BD1234</td>
+            <td>2500</td>
+            <td>5000</td>
+          </tr>
+        <tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="1">SUBTOTAL</td>
+            <td>Rp 10,000.00</td>
+          </tr>
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="1">FINE</td>
+            <td>Rp 5,000.00</td>
+          </tr>
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="1">GRAND TOTAL</td>
+            <td>Rp 15,000.00</td>
+          </tr>
+        </tfoot>
+      </table>
+      <div class="alert alert-success" id="tes">
+        <strong>Payment Successful!</strong>
+      </div>
+      <div class="posisi">
+        <button type="button" class="btn btn-success print" id="pr" href="receipt.html" onclick="location.href='receipt.html'">Print
+          Receipt</button>
+        <button type="button" class="btn btn-success" id="btn" onclick="func()">Check In</button>
+      </div>
+      <div class="clear" style="clear: both;"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="px-4 pt-4 text-white footer">
+    <div class="row">
+      <div class="col-8 col-md">
+        <h5 class="mb-3 header-font font-weight-bold">WHERE WE AT ?</h5>
+        <div class="content-font">
+          <p class="mb-0">Jln Alam Pesona No. 50</p>
+          <p class="mb-0">Sentul 16810</p>
+          <p>+081-234567890</p>
+        </div>
+      </div>
+      <div class="col-8 col-md">
+        <h5 class="mb-3 header-font font-weight-bold">WORK HOURS</h5>
+        <div class="row content-font">
+          <div class="col">
+            <p class="mb-0">Wednesday - Friday</p>
+            <p style="font-size: 18px; font-weight: bold">12:00pm - 09:00pm</p>
+          </div>
+          <div class="col">
+            <p class="mb-0">Saturday - Sunday</p>
+            <p style="font-size: 18px; font-weight: bold">12:00pm - 11:00pm</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-8 col-md pl-5">
+        <h5 class="mb-3 header-font font-weight-bold">SOCIAL NETWORKS</h5>
+        <div class="content-font">
+          <a href="#"><i class="fa fa-facebook fa-social"></i></a>
+          <a href="#"><i class="fa fa-twitter fa-social"></i></a>
+          <a href="#"><i class="fa fa-instagram fa-social"></i></a>
+          <p class="mt-4 text-muted">thislibrary.com</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+    function func() {
+      var btn = document.getElementById('tes');
+      var pr = document.getElementById('pr');
+      tes.style.display = 'block';
+      pr.style.display = 'inline-flex';
+    }
+  </script>
+</body>
+
+</html>

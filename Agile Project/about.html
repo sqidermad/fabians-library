@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/template.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>About</title>
+    <style>
+        .about-title h1 {
+            color: #535353;
+            font-size: 45px;
+            font-weight: 600;
+        }
+
+        .about-title span {
+            color: #AF0808;
+            font-size: 45px;
+            font-weight: 700;
+        }
+
+        .about-title h3 {
+            color: #535353;
+            font-size: 23px;
+            margin-bottom: 24px;
+        }
+
+        .about-title p {
+            color: #7a7a7a;
+            line-height: 1.8;
+            margin: 0 0 15px;
+        }
+
+        .about-paddingB {
+            padding-bottom: 12px;
+        }
+
+        .about-img {
+            padding-left: 57px;
+        }
+
+        .about-icons {
+            margin: 48px 0px 48px 0px;
+        }
+
+        .about-icons i {
+            margin-right: 10px;
+            padding: 0px;
+            font-size: 35px;
+            color: #323232;
+            box-shadow: 0 0 3px rgba(0, 0, 0, .2);
+        }
+
+        .about-icons li {
+            margin: 0px;
+            padding: 0;
+            display: inline-block;
+        }
+
+        #social-fb:hover {
+            color: #3B5998;
+            transition: all .001s;
+        }
+
+        #social-tw:hover {
+            color: #4099FF;
+            transition: all .001s;
+        }
+
+        #social-gp:hover {
+            color: #d34836;
+            transition: all .001s;
+        }
+
+        #social-em:hover {
+            color: #f39c12;
+            transition: all .001s;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top my-navbar content-font">
+        <a class="navbar-brand" href="#">Fabian's Library</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-target">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapse-target">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="catalogue.html">Catalogue</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="borrow.html">Borrow</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+            </ul>
+            <div class="btn-group">
+                <button type="button" class="btn my-button btn-sm"> <i class="fa fa-user-circle-o"></i> Fabian Vieri</button>
+                <button type="button" class="btn my-button dropdown-toggle dropdown-toggle-split btn-sm" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="notification.html">Notification <span class="badge badge-danger">4</span></a>
+                    <a class="dropdown-item" href="edit.html">Edit Profile</a>
+                    <a class="dropdown-item" href="login.html">Log Out</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="jumbotron mb-0 rounded-0 header">
+        <div class="container ">
+            <h1 class="title-font" style="color: #9e332b; font-size: 65.94pt;
+                text-shadow: 3px 3px 30px white;">Preserving
+                The Past,</h1>
+            <h1 class="display-2 header-font text-center ml-5 text-white" style="font-size: 65.94pt;">opening the
+                future</h1>
+        </div>
+    </div>
+
+    <div class="about-section py-5 bg-light" style="height: 765px; background-image: url('image/about/about_02.jpg')">
+        <div class="container ml-5">
+            <div class="row">
+                <div class="col-md-7 col-sm-6">
+                    <div class="about-title clearfix">
+                        <h1 class="header-font">About <span>Fabian's Library</span></h1>
+                        <p class="text-justify text-dark col-11 pl-0 content-font"> <b>Welcome to Fabian's Library</b>
+                            <br>
+                            We provide a place for those of you who want to improve, explore, and gain more experience
+                            about life. <br>
+                            This library was built on 1966 by Mr Fabian, in which this library name implies. <br>
+                            Mr Fabian was a great inventor also professor on 20th century. He built this library
+                            because on that era, there are so many people who want to learn and learn some books, yet
+                            didn't have any money to buy a book. So Mr Fabian tried to solve this problem, by built a
+                            charge-free library called “The Library”, so people could enjoy learn something new.
+                            In 1994, Mr Fabian died and the library was run by his younger sister named Mrs Sarah. To
+                            commemorate his amazing services to society, his sister and all of the library’s board
+                            decided to change the name of the library to “Fabian’s Library”. Until this time, Fabian’s
+                            Library is very famous all around the world, including Singapore, China, Indonesia, Brazil,
+                            and many more. <br>
+                            To keep up with globalization, Mrs Sarah decided to make an online library, so people all
+                            around the world can access Fabian’s Library more easily and also to commemorate Mr
+                            Fabian’s great services to society.
+                            So feel free to enjoy and explore more about life in this library!</p>
+                        <div class="about-icons">
+                            <ul class="p-0">
+                                <li><a href="https://www.facebook.com/"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+                                </li>
+                                <li><a href="https://twitter.com/"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+                                </li>
+                                <li> <a href="https://plus.google.com/"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+                                </li>
+                                <li> <a href="mailto:bootsnipp@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-5">
+                    <img src="image/about-image.png" alt="" height="550">
+                </div>
+                <div class="col-md-5 col-sm-6">
+                    <div class="about-img">
+                        <img src="https://devitems.com/preview/appmom/img/mobile/2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="px-4 pt-4 text-white footer">
+        <div class="row">
+            <div class="col-8 col-md">
+                <h5 class="mb-3 header-font font-weight-bold">WHERE WE AT ?</h5>
+                <div class="content-font">
+                    <p class="mb-0">Jln Alam Pesona No. 50</p>
+                    <p class="mb-0">Sentul 16810</p>
+                    <p>+081-234567890</p>
+                </div>
+            </div>
+            <div class="col-8 col-md">
+                <h5 class="mb-3 header-font font-weight-bold">WORK HOURS</h5>
+                <div class="row content-font">
+                    <div class="col">
+                        <p class="mb-0">Wednesday - Friday</p>
+                        <p style="font-size: 18px; font-weight: bold">12:00pm - 09:00pm</p>
+                    </div>
+                    <div class="col">
+                        <p class="mb-0">Saturday - Sunday</p>
+                        <p style="font-size: 18px; font-weight: bold">12:00pm - 11:00pm</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-8 col-md pl-5">
+                <h5 class="mb-3 header-font font-weight-bold">SOCIAL NETWORKS</h5>
+                <div class="content-font">
+                    <a href="#"><i class="fa fa-facebook fa-social"></i></a>
+                    <a href="#"><i class="fa fa-twitter fa-social"></i></a>
+                    <a href="#"><i class="fa fa-instagram fa-social"></i></a>
+                    <p class="mt-4 text-muted">thislibrary.com</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Javascript -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

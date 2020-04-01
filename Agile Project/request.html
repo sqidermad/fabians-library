@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/template.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="icon" type="image/png" sizes="16x16" href="image/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Confirmation Request</title>
+</head>
+<style type="text/css">
+  .uk {
+    width: 100%;
+  }
+
+  .panjang {
+    height: auto;
+  }
+</style>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top my-navbar">
+    <a class="navbar-brand" href="#">Fabian's Library</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-target">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="collapse-target">
+      <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="onsite.html">Borrow</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="return.html">Return</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="request.html">Confirmation</a>
+          </li>
+        </ul>
+      </ul>
+      <div class="btn-group">
+        <button type="button" class="btn btn-info btn-sm"> <i class="fa fa-user-circle-o"></i>Tessa</button>
+        <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split btn-sm" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <div class="dropdown-menu dropdown-menu-right">
+          <a class="dropdown-item" href="login-staff.html">Log out</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <div class="jumbotron mb-0 rounded-0 header">
+    <div class="container ">
+      <h1 class="title-font" style="color: #9e332b; font-size: 65.94pt;
+                      text-shadow: 3px 3px 30px white;">Preserving
+        The Past,</h1>
+      <h1 class="display-2 header-font text-center ml-5 text-white" style="font-size: 65.94pt;">opening the
+        future</h1>
+    </div>
+  </div>
+
+  <div class="container-fluid bg-primary p-3 mx-auto" style="height: 330px; background-image: url('image/confirm/confirm_02.jpg')">
+    <h1 class="text-center mb-2 mt-4 header-font">
+      Confirmation Request
+    </h1>
+    <div class="container my-0 content-font">
+      <button type="button" class="btn btn-info btn-lg uk mb-2" data-toggle="modal" data-target="#myModal">Registration
+        Request - vierifabian</button>
+      <button type="button" class="btn btn-info btn-lg uk mb-2" data-toggle="modal" data-target="#myModal1">Edit
+        Profile
+        Request - vierifabian</button>
+      <button type="button" class="btn btn-info btn-lg uk mb-2" data-toggle="modal" data-target="#myModal">Registration
+        Request - yono</button>
+
+      <div class="modal fade " id="myModal" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content uk">
+            <div class="modal-header">
+              <h4 class="modal-title">Registration Request</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              <p>
+                First Name : Fabian <br>
+                Last Name : Vieri <br>
+                Email : vierifabian@gmail.com <br>
+                Address : Jl. Alam Pesona No.50 <br>
+                Username : vierifabian <br>
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-info">Accept</button>
+              <button type="button" class="btn btn-info">Block</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade " id="myModal1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content uk">
+            <div class="modal-header">
+              <h4 class="modal-title">Edit Profile Request</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col">
+                  <h3>Before</h3>
+                  <p>
+                    First Name : Fabian <br>
+                    Last Name : Vieri <br>
+                    Email : vierifabian@gmail.com <br>
+                    Address : Jl. Alam Pesona No.50 <br>
+                    Username : vierifabian <br>
+                  </p>
+                </div>
+                <div class="col">
+                  <h3>After</h3>
+                  First Name : John <br>
+                  Last Name : Wall <br>
+                  Email : @@@@@gmail.com <br>
+                  Address : Jl. Alam Pesona No.50 <br>
+                  Username : vierifabian <br>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-info">Accept</button>
+              <button type="button" class="btn btn-info">Block</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="px-4 pt-4 text-white footer">
+    <div class="row">
+      <div class="col-8 col-md">
+        <h5 class="mb-3 header-font font-weight-bold">WHERE WE AT ?</h5>
+        <div class="content-font">
+          <p class="mb-0">Jln Alam Pesona No. 50</p>
+          <p class="mb-0">Sentul 16810</p>
+          <p>+081-234567890</p>
+        </div>
+      </div>
+      <div class="col-8 col-md">
+        <h5 class="mb-3 header-font font-weight-bold">WORK HOURS</h5>
+        <div class="row content-font">
+          <div class="col">
+            <p class="mb-0">Wednesday - Friday</p>
+            <p style="font-size: 18px; font-weight: bold">12:00pm - 09:00pm</p>
+          </div>
+          <div class="col">
+            <p class="mb-0">Saturday - Sunday</p>
+            <p style="font-size: 18px; font-weight: bold">12:00pm - 11:00pm</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-8 col-md pl-5">
+        <h5 class="mb-3 header-font font-weight-bold">SOCIAL NETWORKS</h5>
+        <div class="content-font">
+          <a href="#"><i class="fa fa-facebook fa-social"></i></a>
+          <a href="#"><i class="fa fa-twitter fa-social"></i></a>
+          <a href="#"><i class="fa fa-instagram fa-social"></i></a>
+          <p class="mt-4 text-muted">thislibrary.com</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

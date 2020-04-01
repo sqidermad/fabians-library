@@ -1,0 +1,40 @@
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  float: left;
+  width: 40%;
+  background: #f1f1f1;
+  height: 46px;
+}
+
+form.example button {
+  float: left;
+  width: 75px;
+  padding: 10px;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container {
+  margin-top: 25px;
+}
+
+.posisi {
+  float: right;
+
+}
+
+.letak {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}

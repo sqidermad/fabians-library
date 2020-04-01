@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/template.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Catalogue</title>
+    <style>
+        .card-text {
+            display: none;
+        }
+        .card:hover .card-text{
+            display: block;
+        }
+
+        .card:hover .card-img{
+           opacity: .3;
+        }
+
+        .card-title {
+            color: #fff;
+            background: #712424;
+            text-align: center;
+            padding: 2px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top my-navbar content-font">
+        <a class="navbar-brand" href="#">Fabian's Library</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-target">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapse-target">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="catalogue.html">Catalogue</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="borrow.html">Borrow</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+            </ul>
+            <div class="btn-group">
+                <button type="button" class="btn my-button btn-sm"> <i class="fa fa-user-circle-o"></i> Fabian Vieri</button>
+                <button type="button" class="btn my-button dropdown-toggle dropdown-toggle-split btn-sm" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="notification.html">Notification <span class="badge badge-danger">4</span></a>
+                    <a class="dropdown-item" href="edit.html">Edit Profile</a>
+                    <a class="dropdown-item" href="login.html">Log Out</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="jumbotron mb-0 rounded-0" style="height: 350px; background-image: url('image/catalogue/catalogue_01.jpg')">
+        <div class="container ">
+            <h1 class="title-font" style="color: #9e332b; font-size: 65.94pt;
+                text-shadow: 3px 3px 30px white;">Preserving
+                The Past,</h1>
+            <h1 class="display-2 header-font text-center ml-5 text-white" style="font-size: 65.94pt;">opening the
+                future</h1>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-primary" style="height: 585px; background-image: url('image/catalogue/catalogue_02.jpg')">
+        <h2 class="ml-3 pt-2 text-dark header-font">Find Your Book</h2>
+        <form class="px-3 pt-3 content-font">
+            <div class="form-row">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <div class="col">
+                    <button class="btn my-2 my-sm-0 my-button" type="submit">Search</button>
+                </div>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option">
+                <label class="form-check-label" for="inlineCheckbox1">All</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" id="inlineCheckbox2" name="option">
+                <label class="form-check-label" for="inlineCheckbox2">Author</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" id="inlineCheckbox3" name="option">
+                <label class="form-check-label" for="inlineCheckbox3">Title</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" id="inlineCheckbox3" name="option">
+                <label class="form-check-label" for="inlineCheckbox3">Genre</label>
+            </div>
+        </form>
+
+        <div class="card-deck p-3">
+            <div class="card bg-dark text-warning">
+                <img src="image/books/bener.png" class="card-img" alt="..." height="400">
+                <div class="card-img-overlay content-font text-white">
+                    <h5 class="card-title">Teleporatation Accident</h5>
+                    <p class="card-text mb-0">Author : Ned Beauman</p>
+                    <p class="card-text mb-0">Publisher : Bloomsbury USA</p>
+                    <p class="card-text text-justify">Synopsis : <br>
+                        Long-listed for the 2012 Man Booker Prize, The Teleportation Accident is a hilarious sci-fi
+                        noir about sex, Satan, and teleportation devices.
+                        When you haven’t had sex in a long time, it feels like the worst thing that could ever happen.
+                    </p>
+                </div>
+            </div>
+            <div class="card bg-dark text-warning">
+                <img src="image/books/lplplp.png" class="card-img" alt="..." height="400">
+                <div class="card-img-overlay content-font text-white">
+                    <h5 class="card-title">Bidget Jones's Diary</h5>
+                    <p class="card-text mb-0">Author : Helen Fielding</p>
+                    <p class="card-text mb-0">Publisher : Picador</p>
+                    <p class="card-text text-justify">Synopsis : <br>
+                        The novel revolves around thirty year old Bridget Jones, whose life
+                        revolves around trying to lose weight and finding love. Bridget
+                        decided to change her life around for the new year by vowing to
+                        lose weight, improve her career, stop smoking, and finally find
+                        a boyfriend.</p>
+                </div>
+            </div>
+            <div class="card bg-dark text-warning">
+                <img src="image/books/ads.png" class="card-img" alt="..." height="400">
+                <div class="card-img-overlay content-font text-white">
+                    <h5 class="card-title">There There</h5>
+                    <p class="card-text mb-0">Author : Tommy Orange</p>
+                    <p class="card-text mb-0">Publisher : Knopf</p>
+                    <p class="card-text text-justify">Synopsis : <br>
+                        The novel revolves around thirty year old Bridget Jones, whose life
+                        revolves around trying to lose weight and finding love. Bridget
+                        decided to change her life around for the new year by vowing to
+                        lose weight, improve her career, stop smoking, and finally find
+                        a boyfriend.</p>
+                </div>
+            </div>
+            <div class="card bg-dark text-warning">
+                <img src="image/books/girl.png" class="card-img" alt="..." height="400">
+                <div class="card-img-overlay content-font text-white">
+                    <h5 class="card-title">Mother Stories</h5>
+                    <p class="card-text mb-0">Author : Chris Power</p>
+                    <p class="card-text mb-0">Publisher : Farar, Straur, Giraux</p>
+                    <p class="card-text text-justify">Synopsis : <br>
+                        Chris Power’s stories are peopled by men and women who find themselves
+                        at crossroads or dead ends—characters who search without knowing
+                        what they seek. Their paths lead them to thresholds, bridges,
+                        rivers, and sites of mysterious, irresistible connection to the
+                        past.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="px-4 pt-4 text-white" style="background-image: url('image/catalogue/catalogue_03.jpg');">
+        <div class="row">
+            <div class="col-8 col-md">
+                <h5 class="mb-3 header-font font-weight-bold">WHERE WE AT ?</h5>
+                <div class="content-font">
+                    <p class="mb-0">Jln Alam Pesona No. 50</p>
+                    <p class="mb-0">Sentul 16810</p>
+                    <p>+081-234567890</p>
+                </div>
+            </div>
+            <div class="col-8 col-md">
+                <h5 class="mb-3 header-font font-weight-bold">WORK HOURS</h5>
+                <div class="row content-font">
+                    <div class="col">
+                        <p class="mb-0">Wednesday - Friday</p>
+                        <p style="font-size: 18px; font-weight: bold">12:00pm - 09:00pm</p>
+                    </div>
+                    <div class="col">
+                        <p class="mb-0">Saturday - Sunday</p>
+                        <p style="font-size: 18px; font-weight: bold">12:00pm - 11:00pm</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-8 col-md pl-5">
+                <h5 class="mb-3 header-font font-weight-bold">SOCIAL NETWORKS</h5>
+                <div class="content-font">
+                    <a href="#"><i class="fa fa-facebook fa-social"></i></a>
+                    <a href="#"><i class="fa fa-twitter fa-social"></i></a>
+                    <a href="#"><i class="fa fa-instagram fa-social"></i></a>
+                    <p class="mt-4 text-muted">thislibrary.com</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Javascript -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

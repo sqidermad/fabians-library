@@ -1,0 +1,93 @@
+@font-face {
+    font-family: "mahoni";
+    src: url('../font/mahoni.ttf');
+}
+
+@font-face {
+    font-family: "header";
+    src: url('../font/futura\ medium\ bt.ttf');
+}
+
+@font-face {
+    font-family: "content";
+    src: url('../font/Futura\ Book\ font.ttf');
+}
+
+.title-font {
+    font-family: 'mahoni';
+}
+
+.content-font {
+    font-family: 'content';
+}
+
+.header-font {
+    font-family: 'header';
+}
+
+.my-button {
+    background: #9e332b;
+    color: #fff;
+}
+
+.my-button:hover {
+    background: #612b27;
+    color: bisque;
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.my-navbar {
+    background: rgba(0, 0, 0, 0.3) !important;
+}
+
+footer ul li a {
+    color: white;
+}
+
+.header {
+    background-image: url('../image/home/home_01.jpg');
+    height: 350px;
+}
+
+.story {
+    background-image: url('../image/home/home_02.jpg');
+    height: 345px;
+
+}
+
+.slider {
+    background-image: url('../image/home/home_03.jpg');
+    height: 525px;
+}
+
+.headline {
+    background-image: url('../image/home/home_04.jpg');
+}
+
+.footer {
+    background-image: url('../image/home/home_05.jpg');
+}
+
+.fa-social {
+    width: 25px;
+    font-size: 20px;
+    border-radius: 50%;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+    padding: 4px;
+    margin-right: 20px;
+}
